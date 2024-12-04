@@ -3,12 +3,14 @@ import joblib
 import numpy as np
 import statsmodels.api as sm
 
-# Load the trained model
+# Load the trained model that is saved in model.pkl
 model = joblib.load("model.pkl")
+
 
 # Streamlit app
 st.title("Fintech Real Estate Project 2024")
 st.write("This app uses a machine learning model to make predictions about the price of an Airbnb given its features.")
+st.write("Using the sidebar to the left, fill out the input fields, then click predict to view the price of the Airbnb per night.")
 
 # User input form
 st.sidebar.header("Input Features Of the Property")
